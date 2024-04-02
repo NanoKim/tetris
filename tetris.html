@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tetris</title>
+    <link rel="stylesheet" type="text/css" href="resources/css/tetris.css">
+    <script src="resources/js/tetris.js" rel="javascript"></script>
+</head>
+<body>
+    <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🎃 나노의 테트리스 🎃</h1>
+    <div class="outer">
+        <span class="tetris-form">
+            <canvas id="stage" width="250px" height="500px" style="background-color:black;">
+            </canvas>
+            <span class="tetris-sidebar">
+              <br>
+              <p>Next :</p>
+              <br>
+                <canvas id="next" width="150px" height="150px" style="background-color:black;"></canvas>
+              <br>
+              <p>LINES :<span id="lines">0</span></p>
+              <p><span id="message"></span></p>
+              <div class="tetris-sidebar-blank"></div>
+              <table class="tetris-btn-area">
+                <tr>
+                  <td></td>
+                  <td id="tetris-rotate-button" class="tetris-btn">↻</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td id="tetris-move-left-button" class="tetris-btn">←</td>
+                  <td id="tetris-fall-button" class="tetris-btn">↓</td>
+                  <td id="tetris-move-right-button" class="tetris-btn">→</td>
+                </tr>
+              </table>
+              <br>
+            </span>
+        </span>
+    </div>
+
+    <script>
+        var tetris = new Tetris();
+        tetris.startGame();
+    </script>
+</body>
+</html>

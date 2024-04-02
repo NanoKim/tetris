@@ -1,0 +1,44 @@
+html {
+    touch-action: manipulation;
+}
+
+.outer {
+    display: inline-block;
+}
+
+.tetris-form {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    background-color: #333333;
+}
+
+.tetris-sidebar {
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-direction: column;
+    color: white;
+    background-color: #333333;
+}
+
+.tetris-sidebar-blank {
+    flex-grow: 1;
+}
+
+.tetris-sidebar p {
+   margin: 0;
+   padding: 0;
+}
+
+.tetris-btn-area {
+    border-style: none;
+    width: 100%;
+}
+
+.tetris-btn {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background: #444444;
+}
